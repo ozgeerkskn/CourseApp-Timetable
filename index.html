@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SPARKLE</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container mt-3">
+      <h1>Course App / Timetable</h1>
+      <hr />
+      <div class="row">
+        <div class="col-md-5">
+          <form id="new-course">
+            <div class="form-group">
+              <i class="fa-solid fa-qrcode"></i>
+              <label for="code">Course Code</label>
+
+              <input type="text" class="form-control" id="code" />
+            </div>
+            <div class="form-group">
+              <i class="fa-solid fa-person-chalkboard"></i>
+              <label for="title">Course Name</label>
+              <input type="text" class="form-control" id="title" />
+            </div>
+            <div class="form-group">
+              <i class="fa-solid fa-user-check"></i>
+              <label for="instructor">Instructor</label>
+              <input type="text" class="form-control" id="instructor" />
+            </div>
+            <div class="form-group">
+              <i class="fa-solid fa-chalkboard"></i>
+              <label for="classroom">Class</label>
+              <input type="text" class="form-control" id="classroom" />
+            </div>
+            <div class="form-group">
+              <i class="fa-regular fa-calendar-days"></i>
+              <label for="date">Date</label>
+              <input type="text" class="form-control" id="date" />
+            </div>
+            <div class="form-group">
+              <i class="fa-solid fa-image"></i>
+              <label for="image">Image</label>
+              <input type="text" class="form-control" id="image" />
+            </div>
+            <br />
+            <div>
+              <button type="submit" class="btn btn-primary btn-lg">Save</button>
+            </div>
+          </form>
+          <br />
+        </div>
+
+        <div class="col-lg-15 mt-8">
+          <table class="table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th>Image</th>
+                <th>Course Code</th>
+                <th>Course Name</th>
+                <th>Instructor</th>
+                <th>Class</th>
+                <th>Date</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="course-list"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script src="appES6.js"></script>
+  </body>
+</html>
